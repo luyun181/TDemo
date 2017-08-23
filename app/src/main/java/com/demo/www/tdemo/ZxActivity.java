@@ -47,6 +47,7 @@ public class ZxActivity extends AppCompatActivity {
                     @Override
                     public void onDenied(String permission) {
                         Log.e("xxx", permission + "Denied");
+                        Toast.makeText(context,"请进入设置打开权限",Toast.LENGTH_LONG).show();
                     }
                 });
                 builder.build().request();
