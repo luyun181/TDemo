@@ -20,13 +20,12 @@ public class ScanerActivity extends AppCompatActivity {
 
     private void initView() {
         list = new ArrayList<>();
-        list.add("扫码");
+        list.add("功能0");
         list.add("功能1");
         list.add("功能2");
         recyclerView = (RecyclerView) findViewById(R.id.recycler_con);
         recyclerView.setLayoutManager(new GridLayoutManager(this,3));
         HomeAdapter ad = new HomeAdapter(this,list);
         recyclerView.setAdapter(ad);
-        recyclerView.addOnItemTouchListener(new RecyclerView.SimpleOnItemTouchListener());
     }
 }
