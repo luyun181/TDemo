@@ -47,7 +47,7 @@ public class HomeAdapter extends RecyclerView.Adapter {
                 public void onClick(View view) {
                     switch (position) {
                         case 0:
-                            mContext.startActivity(new Intent(mContext,ZxActivity.class));
+                            mContext.startActivity(new Intent(mContext,CommonScanActivity.class));
                             Toast.makeText(mContext, "0", Toast.LENGTH_LONG).show();
                             break;
                         case 1:
